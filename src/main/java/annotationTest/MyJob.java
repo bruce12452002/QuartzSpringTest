@@ -18,7 +18,7 @@ public class MyJob extends QuartzJobBean {
 	@Override
 	protected void executeInternal(JobExecutionContext ctx) throws JobExecutionException {
 		System.out.println("aaa=" + ctx.getJobDetail().getJobDataMap().get("aaa"));
-		ctx.getJobDetail().getJobDataMap().put("aaa", "333");
+		//ctx.getJobDetail().getJobDataMap().put("aaa", "333");
 	}
 
 	// @Scheduled(cron = "0/2 10 15 * * ?")
