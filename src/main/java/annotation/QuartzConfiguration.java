@@ -18,6 +18,7 @@ public class QuartzConfiguration {
 	public JobDetailFactoryBean jobDetail() {
 		JobDetailFactoryBean job = new JobDetailFactoryBean();
 		job.setJobClass(MyAnnotationJob.class);
+		// job.setDurability(true);
 		return job;
 	}
 
